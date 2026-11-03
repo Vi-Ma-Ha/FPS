@@ -3278,7 +3278,7 @@ ReflectionProbe:
   m_FarClip: 1000
   m_ShadowDistance: 100
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0.15973614, b: 0.4113207, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.148823, b: 0.381132, a: 0}
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4659,7 +4659,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1b03cd513a60cfd4387a5c1ff784ab73, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -7981,7 +7981,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 1
-  m_Color: {r: 0, g: 0.25692707, b: 0.335849, a: 1}
+  m_Color: {r: 0.09374862, g: 0.4497616, b: 0.78867924, a: 1}
   m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
