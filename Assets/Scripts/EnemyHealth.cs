@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float hitPoints = 100f;
 
     // True once the enemy has died. Other scripts check it through IsDead().
-    bool isDead = false;
+   public bool isDead = false;
     // The enemy's collider, which gets turned off when the enemy dies.
     Collider enemyColl;
 
@@ -28,19 +28,32 @@ public class EnemyHealth : MonoBehaviour
    
    public void TakeDamage(float damage)
    {
+
+    BroadcastMessage("OnDamageTaken");
+
         hitPoints -= damage;
 
         if(hitPoints <= damage)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            //print("he dead");
+
+            Die();
         }
 
 
    }
+private void Die()
+{
+    if(isDead)
+    {
+        return;
+    }
 
+    isDead = true;
 
+    enemyColl.enabled = false;
 
-
-
-    // Students add Die() in Week 16.
+    GetComponent<Animator>().SetTrigger("die");
+}
 }

@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 7295991989006273890}
   - component: {fileID: 419821891481368910}
   - component: {fileID: 2380163675569453395}
+  - component: {fileID: -1418350026072272912}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -554,6 +555,19 @@ MonoBehaviour:
     ammoAmount: 0
   - ammoType: 2
     ammoAmount: 0
+--- !u!114 &-1418350026072272912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306554859077334655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c7ed2038c65bc4eb9f23ce8256c183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  hitPoints: 200
 --- !u!1001 &4598983718952005393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -715,3 +729,6 @@ MonoBehaviour:
   ammoType: 0
   ammo: {fileID: 0}
   damage: 30
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 0}
+  hitEffectLifetime: 0.1
