@@ -75,7 +75,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1.25
-  m_Speed: 3
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   target: {fileID: 0}
-  chaseRange: 11
+  chaseRange: 7
   turnSpeed: 5
 --- !u!95 &6721051182569691599
 Animator:
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   hitPoints: 100
+  isDead: 0
 --- !u!114 &82944195804572772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   hitPoints: 100
+  isDead: 0
 --- !u!114 &1085151455931080547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   hitPoints: 100
+  isDead: 0
 --- !u!114 &9061330894641979780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   hitPoints: 100
+  isDead: 0
 --- !u!114 &5139095094682613494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   hitPoints: 100
+  isDead: 0
 --- !u!1001 &6224337332201564426
 PrefabInstance:
   m_ObjectHideFlags: 0
